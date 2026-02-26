@@ -1,5 +1,5 @@
 [package]
-name = "gateway-cli"
+name = "solagate-cli"
 version = "0.1.0"
 edition = "2021"
 
@@ -7,4 +7,4 @@ edition = "2021"
 clap = { workspace = true }
 solana-client = { workspace = true }
 solana-sdk = { workspace = true }
-onchain_gateway = { path = "../../programs/onchain_gateway" }
+solagate = { path = "../../programs/onchain_gateway" }

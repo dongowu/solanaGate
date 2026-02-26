@@ -125,8 +125,8 @@ So remaining quota drops => price increases.
 ## 6) Local Testing
 
 ```bash
-cargo test --offline -p onchain_gateway -- --nocapture
-cargo test --offline -p gateway-cli -- --nocapture
+cargo test --offline -p solagate -- --nocapture
+cargo test --offline -p solagate-cli -- --nocapture
 ```
 
 Current coverage includes:
@@ -160,12 +160,12 @@ cargo build-sbf --manifest-path programs/onchain_gateway/Cargo.toml --no-default
 ### Derive PDAs
 
 ```bash
-cargo run -p gateway-cli -- \
+cargo run -p solagate-cli -- \
   --program-id <PROGRAM_ID> \
   --keypair ~/.config/solana/id.json \
   derive-gateway <ADMIN_PUBKEY>
 
-cargo run -p gateway-cli -- \
+cargo run -p solagate-cli -- \
   --program-id <PROGRAM_ID> \
   --keypair ~/.config/solana/id.json \
   derive-consumer <GATEWAY_PUBKEY> <OWNER_PUBKEY> <API_KEY_ID>
@@ -174,7 +174,7 @@ cargo run -p gateway-cli -- \
 ### Initialize gateway
 
 ```bash
-cargo run -p gateway-cli -- \
+cargo run -p solagate-cli -- \
   --rpc-url https://api.devnet.solana.com \
   --program-id <PROGRAM_ID> \
   --keypair ~/.config/solana/admin.json \
@@ -186,13 +186,13 @@ cargo run -p gateway-cli -- \
 ### Register consumer + top up
 
 ```bash
-cargo run -p gateway-cli -- \
+cargo run -p solagate-cli -- \
   --rpc-url https://api.devnet.solana.com \
   --program-id <PROGRAM_ID> \
   --keypair ~/.config/solana/user.json \
   register-consumer <GATEWAY_PUBKEY> 1 "my-secret-api-key"
 
-cargo run -p gateway-cli -- \
+cargo run -p solagate-cli -- \
   --rpc-url https://api.devnet.solana.com \
   --program-id <PROGRAM_ID> \
   --keypair ~/.config/solana/user.json \
@@ -202,7 +202,7 @@ cargo run -p gateway-cli -- \
 ### Consume (backend signer)
 
 ```bash
-cargo run -p gateway-cli -- \
+cargo run -p solagate-cli -- \
   --rpc-url https://api.devnet.solana.com \
   --program-id <PROGRAM_ID> \
   --keypair ~/.config/solana/backend.json \

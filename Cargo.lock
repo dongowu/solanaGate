@@ -1324,16 +1324,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "gateway-cli"
-version = "0.1.0"
-dependencies = [
- "clap",
- "onchain_gateway",
- "solana-client",
- "solana-sdk",
-]
-
-[[package]]
 name = "generic-array"
 version = "0.14.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2191,16 +2181,6 @@ name = "once_cell_polyfill"
 version = "1.70.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "384b8ab6d37215f3c5301a95a4accb5d64aa607f1fcb26a11b5303878451b4fe"
-
-[[package]]
-name = "onchain_gateway"
-version = "0.1.0"
-dependencies = [
- "borsh 1.6.0",
- "solana-program",
- "solana-sdk",
- "thiserror 2.0.18",
-]
 
 [[package]]
 name = "opaque-debug"
@@ -3143,6 +3123,26 @@ checksum = "86f4aa3ad99f2088c990dfa82d367e19cb29268ed67c574d10d0a4bfe71f07e0"
 dependencies = [
  "libc",
  "windows-sys 0.60.2",
+]
+
+[[package]]
+name = "solagate"
+version = "0.1.0"
+dependencies = [
+ "borsh 1.6.0",
+ "solana-program",
+ "solana-sdk",
+ "thiserror 2.0.18",
+]
+
+[[package]]
+name = "solagate-cli"
+version = "0.1.0"
+dependencies = [
+ "clap",
+ "solagate",
+ "solana-client",
+ "solana-sdk",
 ]
 
 [[package]]

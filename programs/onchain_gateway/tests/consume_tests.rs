@@ -1,4 +1,4 @@
-use onchain_gateway::logic::{apply_consume, ConsumeError, ConsumerRuntimeState, GatewayRules};
+use solagate::logic::{apply_consume, ConsumeError, ConsumerRuntimeState, GatewayRules};
 
 #[test]
 fn consume_updates_counters_and_charges_balance() {

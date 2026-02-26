@@ -1,4 +1,4 @@
-use onchain_gateway::logic::{
+use solagate::logic::{
     can_charge, dynamic_price_lamports, enforce_quota_window, refill_bucket, BucketState,
     QuotaState,
 };

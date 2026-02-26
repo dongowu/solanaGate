@@ -8,7 +8,7 @@ resolver = "2"
 [workspace.package]
 edition = "2021"
 license = "MIT"
-authors = ["solana-onchain-gateway"]
+authors = ["solagate"]
 
 [workspace.dependencies]
 borsh = { version = "1.5.7", features = ["derive"] }

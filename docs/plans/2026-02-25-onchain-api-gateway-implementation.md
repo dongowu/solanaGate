@@ -27,7 +27,7 @@
   - insufficient balance detection
 
 **Step 2: Run tests to verify they fail**
-- Run: `cargo test -p onchain_gateway logic -- --nocapture`
+- Run: `cargo test -p solagate logic -- --nocapture`
 - Expected: FAIL due to unimplemented functions.
 
 **Step 3: Implement minimal logic**
@@ -50,7 +50,7 @@
 - Add integration-style tests for instruction serialization and seed derivation.
 
 **Step 2: Run tests to verify fail**
-- Run: `cargo test -p onchain_gateway instruction -- --nocapture`
+- Run: `cargo test -p solagate instruction -- --nocapture`
 
 **Step 3: Implement minimal program code**
 - Define account layouts and processor handlers:
@@ -72,7 +72,7 @@
 - Add command parser tests for major commands.
 
 **Step 2: Run tests to verify fail**
-- Run: `cargo test -p gateway-cli -- --nocapture`
+- Run: `cargo test -p solagate-cli -- --nocapture`
 
 **Step 3: Implement minimal CLI**
 - Support commands:

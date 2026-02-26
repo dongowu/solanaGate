@@ -3,7 +3,7 @@
 use std::error::Error;
 
 use clap::{Parser, Subcommand};
-use onchain_gateway::{
+use solagate::{
     instruction::GatewayInstruction,
     state::{consumer_pda, gateway_pda},
 };
@@ -20,7 +20,7 @@ use solana_sdk::{
 
 #[derive(Debug, Parser)]
 #[command(
-    name = "gateway-cli",
+    name = "solagate-cli",
     about = "CLI for SolaGate (on-chain API quota/billing gateway)"
 )]
 struct Cli {
@@ -247,7 +247,7 @@ mod tests {
         let program_id = Pubkey::new_unique();
 
         let cli = Cli::parse_from([
-            "gateway-cli",
+            "solagate-cli",
             "--program-id",
             &program_id.to_string(),
             "--keypair",

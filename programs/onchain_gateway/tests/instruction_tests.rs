@@ -1,4 +1,4 @@
-use onchain_gateway::{
+use solagate::{
     instruction::GatewayInstruction, state::consumer_pda, state::gateway_pda, ID,
 };
 use solana_sdk::pubkey::Pubkey;
