@@ -216,7 +216,7 @@ CLI prints transaction signature and explorer URL.
 ## 9) Devnet Deployment & Evidence
 
 - Program ID: `8EUfXTtEjzZrmtoskhCz8KR82JkgyWoBftRiDd5tRc75`
-- Repo URL: `https://github.com/dongowu/solana`
+- Repo URL: `https://github.com/dongowu/solanaGate`
 - Program deploy tx: `https://explorer.solana.com/tx/5oo1HjYw3G8ALqJituiPjBtyic3x6n3vC2cbVSin9fRJRf9kvdUJMPhniAioLpG3JTyr9dcRxtidX8WYKHTQm6yH?cluster=devnet`
 
 ### Devnet transaction links
