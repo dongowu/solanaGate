@@ -1,4 +1,4 @@
-# On-Chain API Gateway (Kong/Apigee on Solana)
+# SolaGate: On-Chain API Gateway (Kong/Apigee on Solana)
 
 A Solana Rust program that rebuilds key API gateway backend logic on-chain:
 

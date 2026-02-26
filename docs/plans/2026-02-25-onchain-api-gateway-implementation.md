@@ -1,4 +1,4 @@
-# On-Chain API Gateway (Quota + Billing) Implementation Plan
+# SolaGate: On-Chain API Gateway (Quota + Billing) Implementation Plan
 
 > **For Claude:** REQUIRED SUB-SKILL: Use superpowers:executing-plans to implement this plan task-by-task.
 

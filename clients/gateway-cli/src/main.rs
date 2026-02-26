@@ -21,7 +21,7 @@ use solana_sdk::{
 #[derive(Debug, Parser)]
 #[command(
     name = "gateway-cli",
-    about = "CLI for the on-chain API quota/billing gateway"
+    about = "CLI for SolaGate (on-chain API quota/billing gateway)"
 )]
 struct Cli {
     #[arg(long, default_value = "https://api.devnet.solana.com")]
