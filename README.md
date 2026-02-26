@@ -150,7 +150,7 @@ cargo build --workspace --offline
 For SBF deployment build (requires Solana toolchain):
 
 ```bash
-cargo build-sbf -p onchain_gateway --manifest-path programs/onchain_gateway/Cargo.toml --no-default-features
+cargo build-sbf --manifest-path programs/onchain_gateway/Cargo.toml --no-default-features
 ```
 
 ---
@@ -215,18 +215,17 @@ CLI prints transaction signature and explorer URL.
 
 ## 9) Devnet Deployment & Evidence
 
-> Fill this section after deploying.
-
-- Program ID: `TODO`
-- Repo URL: `TODO`
+- Program ID: `8EUfXTtEjzZrmtoskhCz8KR82JkgyWoBftRiDd5tRc75`
+- Repo URL: `https://github.com/dongowu/solana`
+- Program deploy tx: `https://explorer.solana.com/tx/5oo1HjYw3G8ALqJituiPjBtyic3x6n3vC2cbVSin9fRJRf9kvdUJMPhniAioLpG3JTyr9dcRxtidX8WYKHTQm6yH?cluster=devnet`
 
 ### Devnet transaction links
 
-- Initialize gateway: `TODO`
-- Register consumer: `TODO`
-- Top up: `TODO`
-- Consume #1: `TODO`
-- Consume rate-limit rejection example: `TODO`
+- Initialize gateway: `https://explorer.solana.com/tx/3UbntjryLfZFJcPYxvpZkpXANg1j1MqHzEAza3qo6nVqFwMKgyjUf83H2XxG9Mcs5ELYVFr1emSpYdt9VRTgdhYD?cluster=devnet`
+- Register consumer: `https://explorer.solana.com/tx/2y2MZpbKjpTeay4kgSZVmno2gh5uu7fQa52Z2yGFoTvNys8a6ethjWYZMfsos6Mt3N3PeNowHVhKFd3CfRVGSVfV?cluster=devnet`
+- Top up: `https://explorer.solana.com/tx/2ejiadqKRVrT6Z2b6dmppdgHQoxpihd1hy6oziy4zsyLBpLNydmVZgFTdGjpXDFnbNgpGDq1cVsdFG79D4q17YmC?cluster=devnet`
+- Consume #1: `https://explorer.solana.com/tx/5NobthQL6ZGRdGBcg1VXaaXVkh9865CDBGdTmwpBA6gCCbLnD7UN2gKQdGshWgsP2pCxVySye4Y46Cnv9b178sP8?cluster=devnet`
+- Consume rate-limit rejection example: preflight simulation rejected with `custom program error: 0x3` (rate limit), so no on-chain tx signature is produced.
 
 ---
 
